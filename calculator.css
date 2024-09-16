@@ -80,15 +80,3 @@ button {
     color: black;
 }
 
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: linear-gradient(45deg, #0a0a0a, #3a4452);
-    font-weight: 390;
-    color: white;
-}
-
-.copyright p {
-    font-size: 25px;
-} 
