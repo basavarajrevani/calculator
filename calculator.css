@@ -9,14 +9,12 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(45deg, #0a0a0a, #3a4452);
-    color: white;
-    overflow-x: hidden;
 }
 
 .calculator-container {
@@ -25,33 +23,27 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px;
 }
 
 .calculator {
     border: 2px solid #717377;
     padding: 20px;
     border-radius: 15px;
-    background: rgba(0, 0, 0, 0.6);
+    background: transparent;
     box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 360px;
-    transition: all 0.3s ease-in-out;
 }
 
 input {
-    width: 100%;
+    width: 320px;
     border: none;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 10px;
+    margin: 10px;
     background: transparent;
     box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.5);
-    font-size: 1.8rem;
+    font-size: 30px;
     text-align: right;
+    cursor: pointer;
     color: white;
-    border-radius: 10px;
 }
 
 input::placeholder {
@@ -60,20 +52,15 @@ input::placeholder {
 
 button {
     border: none;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 50px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 50%;   
     background: transparent;
     color: white;
-    font-size: 1.5rem;
-    box-shadow: 2px 3px 5px rgba(255, 255, 255, 0.2);
+    font-size: 25px;
+    box-shadow: 2px 3px 5px rgb(255, 255, 255, 0.2);
     cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background: rgba(255, 255, 255, 0.1);
 }
 
 .equalbtn {
@@ -81,11 +68,11 @@ button:hover {
 }
 
 .acbtn {
-    color: red;
+    color: green;
 }
 
 .delbtn {
-    color: red;
+    color: green;
 }
 
 .opr {
@@ -93,51 +80,15 @@ button:hover {
     color: black;
 }
 
-/* Grid Layout for Calculator Buttons */
-.calculator-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-}
-
-@media (max-width: 768px) {
-    button {
-        width: 60px;
-        height: 60px;
-        font-size: 1.3rem;
-    }
-
-    input {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .calculator {
-        padding: 10px;
-        max-width: 100%;
-    }
-
-    button {
-        width: 50px;
-        height: 50px;
-        font-size: 1.1rem;
-    }
-
-    input {
-        font-size: 1.2rem;
-    }
-}
-
 .copyright {
     width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 25px 0;
     background: linear-gradient(45deg, #0a0a0a, #3a4452);
     font-weight: 390;
     color: white;
 }
 
 .copyright p {
-    font-size: 16px;
-}
+    font-size: 25px;
+} 
